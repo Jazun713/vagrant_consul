@@ -1,0 +1,8 @@
+{
+  "id": "consul-1",
+  "run_list": [ "role[consul-wrapper]" ],
+  "automatic": {
+    "fqdn": "consul-1",
+    "roles": ["consul-platform"]
+  }
+}

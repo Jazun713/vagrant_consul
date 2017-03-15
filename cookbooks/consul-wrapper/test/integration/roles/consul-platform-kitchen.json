@@ -1,0 +1,18 @@
+{
+  "name": "consul-platform-kitchen",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "consul-platform": {
+      "role": "consul-platform-kitchen",
+      "size": 3
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[consul-platform]"
+  ],
+  "env_run_lists": {
+  }
+}

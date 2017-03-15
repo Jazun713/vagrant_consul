@@ -1,0 +1,10 @@
+{
+  "id": "consul-platform-2-centos-7",
+  "run_list": [ "role[consul-platform-kitchen]" ],
+  "automatic": {
+    "fqdn": "consul-platform-2-centos-7",
+    "roles":[
+      "consul-platform-kitchen"
+    ]
+  }
+}

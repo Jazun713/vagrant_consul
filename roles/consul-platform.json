@@ -1,0 +1,16 @@
+{
+  "name": "consul-platform",
+  "json_class": "Chef::Role",
+  "override_attributes": {
+    "consul-platform": {
+      "role": "consul-platform",
+      "size": 3
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[consul-wrapper]"
+  ],
+  "env_run_lists": {
+  }
+}

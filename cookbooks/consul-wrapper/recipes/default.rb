@@ -1,0 +1,5 @@
+include_recipe 'consul-platform::search'
+include_recipe 'consul-platform::user'
+include_recipe 'consul-platform::install'
+include_recipe 'consul-platform::config'
+include_recipe 'consul-platform::systemd'
