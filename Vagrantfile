@@ -46,7 +46,7 @@ Vagrant.configure('2') do |config|
       node_config.vm.network 'private_network', ip: options[:ipaddress]
       bootstrapip = options[:bootstrapip]
       node_config.vm.provision 'shell', inline: "echo #{bootstrapip} consul-1 >> /etc/hosts"
-      node_config.omnibus.chef_version = :latest
+      node_config.omnibus.chef_version = "12.19.36"
       if options.key?(:forwardport)
         node_config.vm.network :forwarded_port, guest: options[:forwardport][:guest], host: options[:forwardport][:host]
       end

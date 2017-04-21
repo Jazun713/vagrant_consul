@@ -1,0 +1,16 @@
+{
+  "services": [
+    {
+      "check": {
+        "interval": "10s",
+        "script": "/opt/consul/scripts/mongo_is_master.sh"
+        },
+        "name": "mongodb-master",
+        "port": 27017,
+        "tags": [
+          "mongodb",
+          "master"
+        ]
+    }
+  ]
+}

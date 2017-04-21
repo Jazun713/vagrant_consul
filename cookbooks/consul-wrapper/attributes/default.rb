@@ -52,14 +52,6 @@ override[cookbook_name]['config'] = {
     'data_dir' => '/opt/consul/data',
     'log_level' => 'INFO',
     'enable_syslog' => true
-  },
-  'config.json' => {
-    'addresses' => {
-      'https' => '0.0.0.0'
-    },
-    'ports' => {
-      'https' => 8080
-    }
   }
 }
 
